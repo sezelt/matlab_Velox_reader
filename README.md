@@ -12,3 +12,9 @@ Import image data from FEI Velox EMD files to MATLAB
 
 
 No other metadata is read, and no more advanced datatypes are supported. I have only tested this on a few EMD's so large files with spectrum images may cause problems. Open an issue if that happens!
+
+### Example
+```matlab
+image = getDetectorFromVeloxEMD('path-to-emd-file','HAADF');
+```
+will return the HAADF image in the file. Simple!
